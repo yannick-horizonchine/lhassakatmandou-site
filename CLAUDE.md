@@ -30,7 +30,7 @@ Site statique, sans étape de build — dans Cloudflare Pages : *Build command* 
 - Contact : téléphone de Mathieu Le Serre +33 6 27 29 79 77, e-mail contact@lhassa-katmandou.com. Pas de WeChat ni WhatsApp sur ce site.
 - Itinéraire jour par jour (20 jours) : rendez-vous à **Xining** (J1), fin à **Katmandou** (J20). Les vols internationaux ne sont **pas** inclus.
 - Toute modification de contenu doit être reportée dans les 2 langues (FR et EN), y compris le résumé jour par jour du profil d'altitude, les balises `canonical`, `hreflang`, Open Graph/Twitter et le JSON-LD de l'en-tête.
-- **Visages floutés : uniquement nos clients** (voyageurs étrangers d'environ 65-80 ans), quand leur visage est reconnaissable. Ne **pas** flouter les pèlerins, moines, habitants, passants, personnel (train, magasins), le guide local ni l'équipe China Lost Horizon. Exception : `photo-28.jpg` (cycliste poing levé) reste net. Les maillots « Club des Cent Cols » ne posent pas de problème.
+- **Visages floutés : uniquement nos clients** (voyageurs étrangers d'environ 65-80 ans), quand leur visage est reconnaissable. Ne **pas** flouter les pèlerins, moines, habitants, passants, personnel (train, magasins), le guide local ni l'équipe China Lost Horizon. Exception : `photo-28.jpg` (notre guide, poing levé) reste net. Les maillots « Club des Cent Cols » ne posent pas de problème.
 - Galerie « Le groupe 2026 » (section `#photos`).
 - Après tout remplacement d'une photo existante, incrémenter le `?v=N` des URL d'images (sinon navigateurs et Cloudflare réaffichent l'ancienne version). `_headers` limite le cache des images à 1 jour.
 - Images en `loading="lazy"`, sauf celles du carrousel d'en-tête (la première en `fetchpriority="high"`).
