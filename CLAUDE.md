@@ -23,7 +23,10 @@ Site statique, sans étape de build — dans Cloudflare Pages : *Build command* 
 ## Contenu
 
 - Tarif : **4 500 € par personne** (résumé, section « Inclus » et `offers` du JSON-LD, dans les 2 langues).
-- Voyage de 20 jours / 19 nuits : rendez-vous à **Xining** (J1), fin à **Katmandou** (J20). Les vols internationaux ne sont **pas** inclus.
+- Édition 2027 : **du 19 septembre au 10 octobre 2027** (résumé, sous-titre, section « Inclus », meta description).
+- Groupe : cyclistes de plusieurs clubs francophones (France, Belgique, Suisse, Québec) inscrits **à titre individuel** — ne plus parler de « groupes constitués ». Ne pas mentionner le Club des Cent Cols.
+- Chiffres clés : une douzaine de jours de vélo, dix cols à plus de 4 000 m dont cinq à plus de 5 000 m, plus de 12 000 m de dénivelé, train du Tibet ~22 h.
+- Itinéraire jour par jour de 20 jours / 19 nuits : rendez-vous à **Xining** (J1), fin à **Katmandou** (J20). Les vols internationaux ne sont **pas** inclus.
 - Toute modification de contenu doit être reportée dans les 2 langues (FR et EN), y compris le résumé jour par jour du profil d'altitude, les balises `canonical`, `hreflang`, Open Graph/Twitter et le JSON-LD de l'en-tête.
 - Images en `loading="lazy"`, sauf celles du carrousel d'en-tête (la première en `fetchpriority="high"`).
 - Pas de formulaire : contact par e-mail (info@chinalosthorizon.com), WeChat et WhatsApp (QR codes).
