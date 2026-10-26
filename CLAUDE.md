@@ -15,7 +15,7 @@ Site statique, sans étape de build — dans Cloudflare Pages : *Build command* 
 - `index.html` — page **française** (langue par défaut, `x-default`)
 - `en/index.html` — version anglaise
 - `styles.css` — feuille de style commune (reprise de la page d'origine sur horizonchine.com/chinalosthorizon)
-- `images/` — `photo-01.jpg` à `photo-37.jpg` (chacune utilisée **une seule fois** sur la page), `logo.png` (China Lost Horizon) ; `favicon*`, `apple-touch-icon.png`, `icon-192.png` — icônes (Everest et drapeaux de prière)
+- `images/` — `photo-01.jpg` à `photo-37.jpg` (chacune utilisée **une seule fois** sur la page), `logo.png` (China Lost Horizon) ; `favicon*`, `apple-touch-icon.png`, `icon-192.png` — icônes (identiques à celles de horizontrekking.com ; liens en `?v=2`)
 - `404.html`, `en/404.html` — pages « introuvable » (chemins absolus obligatoires)
 - `sitemap.xml`, `robots.txt` — SEO
 - `_redirects` — redirige `/CLAUDE.md` et `/README.md` vers l'accueil pour ne pas les exposer
