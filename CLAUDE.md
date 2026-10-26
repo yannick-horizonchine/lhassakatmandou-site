@@ -15,7 +15,7 @@ Site statique, sans étape de build — dans Cloudflare Pages : *Build command* 
 - `index.html` — page **française** (langue par défaut, `x-default`)
 - `en/index.html` — version anglaise
 - `styles.css` — feuille de style commune (reprise de la page d'origine sur horizonchine.com/chinalosthorizon)
-- `images/` — `photo-01.jpg` à `photo-23.jpg`, `logo.png` (Lost Horizon), QR codes WeChat et WhatsApp ; `favicon*`, `apple-touch-icon.png`, `icon-192.png` — icônes (Everest et drapeaux de prière)
+- `images/` — `photo-01.jpg` à `photo-37.jpg` (chacune utilisée **une seule fois** sur la page), `logo.png` (Lost Horizon), QR codes WeChat et WhatsApp ; `favicon*`, `apple-touch-icon.png`, `icon-192.png` — icônes (Everest et drapeaux de prière)
 - `404.html`, `en/404.html` — pages « introuvable » (chemins absolus obligatoires)
 - `sitemap.xml`, `robots.txt` — SEO
 - `_redirects` — redirige `/CLAUDE.md` et `/README.md` vers l'accueil pour ne pas les exposer
@@ -30,5 +30,7 @@ Site statique, sans étape de build — dans Cloudflare Pages : *Build command* 
 - Contact : téléphone de Mathieu Le Serre +33 6 27 29 79 77, e-mail info@chinalosthorizon.com, QR codes WeChat et WhatsApp.
 - Itinéraire jour par jour (20 jours) : rendez-vous à **Xining** (J1), fin à **Katmandou** (J20). Les vols internationaux ne sont **pas** inclus.
 - Toute modification de contenu doit être reportée dans les 2 langues (FR et EN), y compris le résumé jour par jour du profil d'altitude, les balises `canonical`, `hreflang`, Open Graph/Twitter et le JSON-LD de l'en-tête.
+- **Visages floutés** sur toutes les photos où ils sont reconnaissables (voyageurs, moines, passants), sauf `photo-28.jpg` (cycliste poing levé, accord du propriétaire). Toute nouvelle photo avec des visages nets doit être floutée avant d'être ajoutée. Les maillots « Club des Cent Cols » visibles sur les photos ne posent pas de problème.
+- Galerie « Le groupe 2026 » (section `#photos`).
 - Images en `loading="lazy"`, sauf celles du carrousel d'en-tête (la première en `fetchpriority="high"`).
 - Pas de formulaire : contact par e-mail (info@chinalosthorizon.com), WeChat et WhatsApp (QR codes).
