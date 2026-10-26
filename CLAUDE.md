@@ -22,6 +22,7 @@ Site statique, sans étape de build — dans Cloudflare Pages : *Build command* 
 
 ## Contenu
 
+- Tarif : **4 500 € par personne** (résumé, section « Inclus » et `offers` du JSON-LD, dans les 2 langues).
 - Voyage de 20 jours / 19 nuits : rendez-vous à **Xining** (J1), fin à **Katmandou** (J20). Les vols internationaux ne sont **pas** inclus.
 - Toute modification de contenu doit être reportée dans les 2 langues (FR et EN), y compris le résumé jour par jour du profil d'altitude, les balises `canonical`, `hreflang`, Open Graph/Twitter et le JSON-LD de l'en-tête.
 - Images en `loading="lazy"`, sauf celles du carrousel d'en-tête (la première en `fetchpriority="high"`).
