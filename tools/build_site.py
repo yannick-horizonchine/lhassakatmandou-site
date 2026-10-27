@@ -358,7 +358,7 @@ def page(L):
       <div class="cap section-eyebrow">{t["guide_cap"]}</div>
       <h2 class="section-title">{esc(t["guide_h"])}</h2>
       <div class="day-card" style="border-bottom:1px solid var(--border);">
-        <div class="day-photo day-photo-tall"><img loading="lazy" decoding="async" src="/images/guide-axel.jpg?v=1" alt="{esc(t["guide_alt"])}" style="object-position:center top;"></div>
+        <div class="day-photo" style="aspect-ratio:233/329;"><img loading="lazy" decoding="async" src="/images/guide-axel.jpg?v=2" alt="{esc(t["guide_alt"])}" style="object-position:center top;"></div>
         <div>
           <div class="day-num">{esc(t["guide_role"])}</div>
           <h3>Axel</h3>
