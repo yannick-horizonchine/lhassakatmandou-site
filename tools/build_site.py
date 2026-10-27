@@ -39,7 +39,13 @@ T = {
        (8,"La vie de camp en altitude","Un cuisinier et son assistant vous accompagnent tout du long : nuits sous tente et repas chauds, même à 4 800 m."),
        (12,"Katmandou et la vallée népalaise","Deux jours pour découvrir Durbar Square, Patan, Bhaktapur et les stupas de Swayambhunath et Boudhanath.")],
   alt_h="Acclimatation à l'altitude indispensable",
-  alt_p="Ce voyage commence haut et monte vite : une douzaine de jours de vélo entre 3 400 et plus de 5 200 m, avec des étapes pouvant dépasser 120 km et 1 300 m de dénivelé positif. Une bonne acclimatation est essentielle : les premiers jours (Xining, puis Lhassa) permettent une montée progressive avant les cols du plateau, et une bouteille d'oxygène de secours fait partie de l'équipement du voyage. Comme pour nos autres itinéraires en très haute altitude, nous pouvons vous aider à préparer votre acclimatation avant le départ.",
+  alt_p="Ce voyage commence haut et monte vite : une douzaine de jours de vélo entre 3 400 et plus de 5 200 m, avec des étapes pouvant dépasser 120 km et 1 300 m de dénivelé positif. Une bonne acclimatation est essentielle : les premiers jours (Xining, puis Lhassa) permettent une montée progressive avant les cols du plateau, et une bouteille d'oxygène de secours fait partie de l'équipement du voyage. Un caisson hyperbare portable (PAC) suit en outre l'équipe tout au long du parcours. Comme pour nos autres itinéraires en très haute altitude, nous pouvons vous aider à préparer votre acclimatation avant le départ.",
+  guide_cap="Votre guide", guide_h="Axel, guide et explorateur", guide_role="Guide pendant tout le voyage",
+  guide_alt="Axel, notre guide, souriant avec son sac à dos et ses bâtons de marche sur un sentier de montagne",
+  guide_ps=["Axel est aventurier professionnel et chef d'expédition en plein air. Il a parcouru des environnements exigeants — les Alpes, l'Amazonie, le Sahara — et mené des expéditions en haute montagne, une traversée en pirogue et des expéditions dans le désert. Cette expérience lui a donné une solide pratique de la vie en pleine nature.",
+            "Ancien ingénieur en énergie et environnement, il a travaillé à l'observatoire astronomique de Shanghai. Passionné par l'histoire et la culture chinoises, il a étudié le chinois et l'histoire de la Chine ancienne. Depuis 2024, il emmène des voyageurs sur de longs itinéraires de traversée en Europe, en Chine et dans d'autres pays. Il a déjà guidé au Tibet et a traversé la Chine à vélo.",
+            "Il aime l'aventure en montagne et l'observation de la faune, et partage volontiers avec le groupe les anecdotes culturelles du chemin."],
+  guide_stats=[("Langues","chinois, anglais, français, espagnol"),("Secourisme","formation de l'Ifremmont (Institut de formation et de recherche en médecine de montagne)")],
   gal_cap="En images", gal_h="Le groupe 2026, de Lhassa au lac Yamdrok", gal_p="Quelques moments du premier voyage, en 2026 : préparation des vélos, visites de Lhassa, pauses au bord du lac Yamdrok et vie de camp.",
   route_cap="Parcours", route_h="Profil d'altitude, de Lhassa à Katmandou",
   profile_aria="Profil d'altitude de Lhassa à Katmandou",
@@ -51,11 +57,12 @@ T = {
             ("Transferts","Accueil à votre arrivée à Xining ; transfert à l'aéroport de Katmandou le dernier jour"),
             ("Train","Train de nuit Xining–Lhassa (couchette de 1re classe)"),
             ("Repas","Tous les repas, sauf ceux indiqués comme non inclus"),
-            ("Encadrement","Guide anglophone et sinophone pendant tout le voyage"),
+            ("Encadrement","Axel, votre guide (chinois, anglais, français, espagnol), pendant tout le voyage"),
             ("Équipe cuisine","Un cuisinier et un assistant, avec tout l'équipement de cuisine de camp"),
             ("Vélo et matériel","Un VTT par personne (Giant ou équivalent) avec pièces de rechange ; tout le matériel de camping sauf votre sac de couchage"),
             ("Permis et droits","Tous les permis d'entrée et de circulation au Tibet, les droits des parcs nationaux (Everest, lac Yamdrok, glacier du Karo La) et toutes les entrées des sites et monastères au programme"),
-            ("Véhicules","Un minibus d'assistance et un véhicule logistique, ainsi qu'une bouteille d'oxygène de secours si nécessaire")],
+            ("Véhicules","Un minibus d'assistance et un véhicule logistique"),
+            ("Sécurité en altitude","Une bouteille d'oxygène de secours et un caisson hyperbare portable (PAC) qui suit l'équipe")],
   excluded=[("Vols","Vols internationaux jusqu'à Xining et depuis Katmandou"),
             ("Certains repas","Déjeuners et dîners à Xining, Lhassa et Gyantse, et dîners à Katmandou et Shigatse"),
             ("Visa","Frais de visa (pas de visa requis pour la Chine ; environ 30 € pour le Népal)"),
@@ -99,7 +106,13 @@ T = {
        (8,"High-altitude camp life","A cook and an assistant travel with you the whole way: camp nights and hot meals, even at 4,800m."),
        (12,"Kathmandu and the Nepalese valley","Two days to discover Durbar Square, Patan, Bhaktapur and the stupas of Swayambhunath and Boudhanath.")],
   alt_h="Altitude acclimatisation required beforehand",
-  alt_p="This trip starts high and climbs fast: around twelve riding days between 3,400 and over 5,200m, with stages that can exceed 120km and 1,300m of ascent. Good acclimatisation is essential — the first days (Xining, then Lhasa) allow a gentle climb before the passes of the plateau, and a spare oxygen bottle is carried as part of the trip's equipment. As with our other very high-altitude routes, we can help you prepare your acclimatisation before departure.",
+  alt_p="This trip starts high and climbs fast: around twelve riding days between 3,400 and over 5,200m, with stages that can exceed 120km and 1,300m of ascent. Good acclimatisation is essential — the first days (Xining, then Lhasa) allow a gentle climb before the passes of the plateau, and a spare oxygen bottle is carried as part of the trip's equipment. A portable hyperbaric chamber (PAC) also travels with the team throughout the trip. As with our other very high-altitude routes, we can help you prepare your acclimatisation before departure.",
+  guide_cap="Your Guide", guide_h="Axel, Guide and Explorer", guide_role="Your guide for the whole trip",
+  guide_alt="Axel, our guide, smiling with his backpack and trekking poles on a mountain trail",
+  guide_ps=["Axel is a professional adventurer and outdoor leader. He has worked in demanding environments — the Alps, the Amazon, the Sahara — and has completed high-mountain expeditions, a dugout canoe crossing and desert expeditions. This experience has given him a deep, practical knowledge of life in the wild.",
+            "A former environmental and energy engineer, he worked at the Shanghai Astronomical Observatory. Drawn to Chinese history and culture, he studied Chinese and ancient Chinese history. Since 2024, he has been leading travellers on long-distance crossings in Europe, China and other countries. He has already guided in Tibet and has crossed China by bike.",
+            "He loves mountain adventure and wildlife watching, and enjoys sharing the cultural stories of the road with the group."],
+  guide_stats=[("Languages","Chinese, English, French, Spanish"),("First aid","Ifremmont training (Institut de formation et de recherche en médecine de montagne)")],
   gal_cap="In Pictures", gal_h="The 2026 group, from Lhasa to Yamdrok Lake", gal_p="A few moments from the first trip, in 2026: getting the bikes ready, visiting Lhasa, breaks by Yamdrok Lake and camp life.",
   route_cap="Route", route_h="Elevation Profile, Lhasa to Kathmandu",
   profile_aria="Elevation profile, Lhasa to Kathmandu",
@@ -111,11 +124,12 @@ T = {
             ("Transfers","Welcome on arrival in Xining; transfer to Kathmandu airport on the last day"),
             ("Train","Xining–Lhasa overnight train (1st-class sleeper)"),
             ("Meals","All meals except those listed as not included"),
-            ("Guiding","English and Mandarin-speaking guide for the whole trip"),
+            ("Guiding","Axel, your guide (Chinese, English, French, Spanish), for the whole trip"),
             ("Kitchen crew","A cook and an assistant, with full camp kitchen equipment"),
             ("Bike &amp; gear","One mountain bike per person (Giant or equivalent) with spare parts; all camping equipment except your sleeping bag"),
             ("Permits &amp; fees","All Tibet entry/travel permits, national park fees (Everest, Yamdrok Lake, Karo La glacier) and all site/monastery tickets on the programme"),
-            ("Support vehicles","A support minivan and a logistics vehicle, plus a spare oxygen bottle if needed")],
+            ("Support vehicles","A support minivan and a logistics vehicle"),
+            ("Altitude safety","A spare oxygen bottle and a portable hyperbaric chamber (PAC) that travels with the team")],
   excluded=[("Flights","International flights to Xining and from Kathmandu"),
             ("Some meals","Lunches and dinners in Xining, Lhasa and Gyantse, and dinners in Kathmandu and Shigatse"),
             ("Visa","Visa fees (none required for China; about €30 for Nepal)"),
@@ -140,8 +154,8 @@ DAYS = [
        'en': ("Arrival in Xining (2300m)", "Arrival in Xining, the largest city on the Tibetan plateau. Welcome on arrival and transfer to your accommodation.", [('night',"Xining, 2300m")])}),
  (35, {'fr': ("Xining → Lhassa", "Journée de visite du monastère de Kumbum, bâti sur le lieu de naissance de Tsongkhapa, où l'exploratrice Alexandra David-Néel a séjourné trois ans. Embarquement le soir à bord du « train du Tibet », le plus haut du monde : environ 22 heures de voyage pour une arrivée en douceur et tout en paysages sur le toit du monde.", [('transport',"Train de nuit"),('night',"À bord du train")]),
        'en': ("Xining → Lhasa", "Full-day visit of Kumbum Monastery, built on the birthplace of Tsongkhapa and where the explorer Alexandra David-Neel once stayed for three years. Boarding in the evening on the “Tibet train”, the highest in the world: around 22 hours on board for a scenic and gentle arrival on the roof of the world.", [('transport',"Overnight train"),('night',"On board the train")])}),
- (16, {'fr': ("Arrivée à Lhassa (3 835 m)", "Arrivée à Lhassa en soirée. Accueil par votre guide anglophone et transfert à l'hôtel.", [('night',"Lhassa, 3 835 m")]),
-       'en': ("Arrival in Lhasa (3835m)", "Evening arrival in Lhasa. Welcome by your English-speaking guide and transfer to your hotel.", [('night',"Lhasa, 3835m")])}),
+ (16, {'fr': ("Arrivée à Lhassa (3 835 m)", "Arrivée à Lhassa en soirée. Accueil par votre guide et transfert à l'hôtel.", [('night',"Lhassa, 3 835 m")]),
+       'en': ("Arrival in Lhasa (3835m)", "Evening arrival in Lhasa. Welcome by your guide and transfer to your hotel.", [('night',"Lhasa, 3835m")])}),
  (33, {'fr': ("Lhassa à vélo", "Tour à vélo de la ville et de ses environs : photo de groupe devant le Potala, le bâtiment le plus imposant de Lhassa et ancien siège du gouvernement tibétain, puis visite des monastères de Sera et de Drepung, à 8 km du centre — le plus grand ensemble monastique du Tibet.", [('night',"Lhassa, 3 835 m")]),
        'en': ("Lhasa by bike", "Cycling tour of the city and its surroundings: group photo in front of the Potala, the most imposing building in Lhasa and former seat of the Tibetan government, followed by a visit to Sera and Drepung monasteries, 8km from the city centre – the largest monastic complex in Tibet.", [('night',"Lhasa, 3835m")])}),
  (31, {'fr': ("Lhassa", "Visite le matin du monastère du Jokhang, construit en 647 lors de l'arrivée du bouddhisme au Tibet — berceau et foyer sacré du bouddhisme tibétain. Temps libre ensuite pour flâner sur le Barkhor, la rue animée qui l'entoure.", [('night',"Lhassa, 3 835 m")]),
@@ -205,6 +219,8 @@ def page(L):
           <p>{esc(d)}</p>
         </div>
       </div>''' for k, (p, h, d) in enumerate(t['hls']))
+    guide_ps = '\n'.join(f'          <p class="desc">{esc(p)}</p>' for p in t['guide_ps'])
+    guide_stats = '\n'.join(f'            <div class="day-stat">{esc(k)}{" :" if L == "fr" else ":"} <b>{esc(v)}</b></div>' for k, v in t['guide_stats'])
     strip, cards = [], []
     for k, (photo, dd) in enumerate(DAYS):
         n = k + 1; title, desc, stats = dd[L]
@@ -333,6 +349,24 @@ def page(L):
       <div class="pillar-card" style="margin-top:24px;border-left:3px solid var(--red);">
         <h3>{esc(t["alt_h"])}</h3>
         <p>{esc(t["alt_p"])}</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="guide" style="padding-top:0;">
+    <div class="wrap-narrow">
+      <div class="cap section-eyebrow">{t["guide_cap"]}</div>
+      <h2 class="section-title">{esc(t["guide_h"])}</h2>
+      <div class="day-card" style="border-bottom:1px solid var(--border);">
+        <div class="day-photo day-photo-tall"><img loading="lazy" decoding="async" src="/images/guide-axel.jpg?v=1" alt="{esc(t["guide_alt"])}" style="object-position:center top;"></div>
+        <div>
+          <div class="day-num">{esc(t["guide_role"])}</div>
+          <h3>Axel</h3>
+{guide_ps}
+          <div class="day-stats">
+{guide_stats}
+          </div>
+        </div>
       </div>
     </div>
   </section>
