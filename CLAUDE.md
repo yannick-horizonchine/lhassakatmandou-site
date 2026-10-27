@@ -12,6 +12,7 @@ Ce dépôt contient le site lhassa-katmandou.com (marque **China Lost Horizon** 
 
 Site statique, sans étape de build — dans Cloudflare Pages : *Build command* vide, *Build output directory* `/`.
 
+- 📌 **À RAPPELER AU PROPRIÉTAIRE** : une fois les dates définitives appliquées et le site finalisé, lui proposer d'**abandonner le script** `tools/build_site.py` (il l'a demandé). Concrètement : vérifier que la régénération ne change rien, supprimer `tools/build_site.py` (et `tools/profile.svg` si inutile), retirer cette consigne et celles sur le script de ce fichier, et éditer ensuite `index.html` et `en/index.html` directement, dans les 2 langues. Dès que le propriétaire annonce les dates définitives, le rappeler après les avoir mises à jour.
 - ⚠️ `index.html` et `en/index.html` sont **générés** par `python3 tools/build_site.py` : modifier les textes, prix, photos et jours **dans `tools/build_site.py`**, puis régénérer (une édition directe des HTML serait écrasée). Voir `tools/README.md`.
 - `index.html` — page **française** (langue par défaut, `x-default`)
 - `en/index.html` — version anglaise
