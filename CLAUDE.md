@@ -25,7 +25,7 @@ Site statique, sans étape de build — dans Cloudflare Pages : *Build command* 
 ## Contenu
 
 - Tarif : **4 500 € par personne** (résumé, section « Inclus » et `offers` du JSON-LD, dans les 2 langues).
-- Édition 2027 : **du 18 septembre au 7 octobre 2027** (résumé, sous-titre, section « Inclus », meta description). ⚠️ Dates **provisoires** : le propriétaire confirmera les dates définitives ; les mettre alors à jour partout (FR + EN, y compris la meta description), et vérifier la cohérence avec la durée de 20 jours. L'e-mail aux clubs partira après.
+- Édition 2027 : **du 18 septembre au 7 octobre 2027** (résumé, sous-titre, section « Inclus », meta description). ⚠️ Dates **provisoires** : le propriétaire confirmera les dates définitives ; les mettre alors à jour partout (FR + EN, y compris la meta description), et vérifier la cohérence avec la durée de 20 jours. L'e-mail aux clubs partira après. Contrainte de dates : avoir passé le camp de base de l'Everest (Rongbuk, jour 13) avant les vacances nationales chinoises (semaine du 1er au 7 octobre) pour éviter la foule ; avec un départ le 18 septembre, Rongbuk tombe le 30 septembre.
 - Groupe : cyclistes de plusieurs clubs francophones (France, Belgique, Suisse, Québec) inscrits **à titre individuel** — ne plus parler de « groupes constitués ». Ne pas mentionner le Club des Cent Cols.
 - Chiffres clés : une douzaine de jours de vélo, **une dizaine de cols** à plus de 4 000 m (dont plusieurs à plus de 5 000 m — ne pas donner de nombre exact), **environ 9 000 m** de dénivelé, train du Tibet ~22 h.
 - Durée annoncée : **20 jours / 19 nuits** (titre, JSON-LD), choix du propriétaire.
