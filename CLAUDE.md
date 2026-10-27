@@ -4,6 +4,7 @@ Ce dépôt contient le site lhassa-katmandou.com (marque **China Lost Horizon** 
 
 ## Règles de travail
 
+- Ce site relève de China Lost Horizon (offre B2B en Chine). Il est distinct de Yunnan Belenos (activités personnelles du propriétaire) et de Horizon Trekking (séjours Europe et Afrique du Nord pour clients sinophones) : ne jamais mélanger leurs contenus, marques ou dépôts.
 - Modifier les fichiers **directement dans ce dépôt** (pas de fichiers à copier-coller à la main).
 - Chaque changement est commité puis poussé ; Cloudflare Pages redéploie à partir de la branche `main`.
 - Garder le site compatible avec Cloudflare Pages (fichiers statiques, ou build dont le dossier de sortie est configuré dans Pages).
