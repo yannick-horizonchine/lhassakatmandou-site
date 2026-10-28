@@ -256,7 +256,7 @@ def page(L):
                      "duration": "P20D",
                      "offers": {"@type": "Offer", "price": "4590", "priceCurrency": "EUR", "url": url + "#fee"}}, ensure_ascii=False, indent=2)
     return f'''<!DOCTYPE html>
-<html lang="{L}" data-theme="dark">
+<html lang="{L}" data-theme="light">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
