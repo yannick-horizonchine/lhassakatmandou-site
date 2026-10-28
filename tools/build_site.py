@@ -1,6 +1,6 @@
 # Génère index.html (FR) et en/index.html (EN) — à lancer depuis n'importe où : python3 tools/build_site.py
 # Les textes, photos, jours et prix se modifient ICI, puis on régénère (les pages sont écrasées).
-import json, os, html
+import json, os, html, datetime
 HERE = os.path.dirname(os.path.abspath(__file__))
 R = os.path.dirname(HERE)
 B = 'https://lhassa-katmandou.com'
@@ -16,7 +16,7 @@ T = {
 'fr': dict(
   lang='fr', locale='fr_FR', home='/', other='/en/', path='',
   title="Lhassa–Katmandou à vélo — 20 jours / 19 nuits | Lost Horizon",
-  desc="Lhassa–Katmandou à vélo, du 18 septembre au 7 octobre 2027 : une dizaine de cols à plus de 4 000 m, le lac Yamdrok, le camp de base de l'Everest et la traversée de l'Himalaya jusqu'à Katmandou. Départ de Xining. 4 500 € par personne.",
+  desc="Lhassa–Katmandou à vélo, du 18 septembre au 7 octobre 2027 : une dizaine de cols à plus de 4 000 m, le lac Yamdrok, le camp de base de l'Everest et la traversée de l'Himalaya jusqu'à Katmandou. Départ de Xining. 4 590 € par personne.",
   tagline="CHINE · TREKKING &amp; AVENTURE",
   nav=[('#highlights','Points forts'),('#itinerary','Jour par jour'),('#fee','Inclus'),('#contact','Contact')],
   theme="Changer de thème", region="Tibet → Népal",
@@ -24,7 +24,7 @@ T = {
   sub="Du 18 septembre au 7 octobre 2027 — une douzaine de jours à vélo, une dizaine de cols à plus de 4 000 m et environ 9 000 m de dénivelé, du palais du Potala au camp de base de l'Everest, puis la traversée de l'Himalaya jusqu'à Katmandou.",
   duration="20 jours / 19 nuits",
   summary="Ce n'est pas une simple traversée, c'est un voyage à vélo sur l'un des plateaux les plus hauts et les plus spectaculaires de la planète. Depuis Lhassa et le palais du Potala, une douzaine de jours de vélo sur la route de l'Amitié franchissent une dizaine de cols à plus de 4 000 m — dont plusieurs à plus de 5 000 m, avec le Gyagtso La à 5 220 m — pour environ 9 000 m de dénivelé. Au programme : le lac Yamdrok, les villes de Gyantsé et Shigatsé, le camp de base de l'Everest au pied de sa face nord, puis la traversée de l'Himalaya jusqu'au Népal et aux temples de la vallée de Katmandou. Un itinéraire exigeant, pour des cyclistes entraînés et à l'aise en montagne.",
-  price_big="4 500 €", price_unit="par personne", price_line="Édition 2027, du 18 septembre au 7 octobre : <b>4 500 €</b> par personne",
+  price_big="4 590 €", price_unit="par personne", price_line="Édition 2027, du 18 septembre au 7 octobre : <b>4 590 €</b> par personne",
   difficulty="Difficulté", diff_aria="difficulté 5 sur 5",
   meeting="Rendez-vous à Xining — fin à Katmandou", dates_tag="18 sept. → 7 oct. 2027", next="Prochain départ : du 18 septembre au 7 octobre 2027",
   season="Après la mousson et avant l'arrivée des grands froids : la saison idéale pour ce voyage.",
@@ -83,7 +83,7 @@ T = {
 'en': dict(
   lang='en', locale='en_GB', home='/en/', other='/', path='en/',
   title="Lhasa to Kathmandu by Bike — 20 days / 19 nights | Lost Horizon",
-  desc="Lhasa to Kathmandu by bike, 18 September to 7 October 2027: around ten passes above 4,000m, Yamdrok Lake, Everest Base Camp and the crossing of the Himalaya to Kathmandu. Starts in Xining. €4,500 per person.",
+  desc="Lhasa to Kathmandu by bike, 18 September to 7 October 2027: around ten passes above 4,000m, Yamdrok Lake, Everest Base Camp and the crossing of the Himalaya to Kathmandu. Starts in Xining. €4,590 per person.",
   tagline="CHINA · TREKKING &amp; ADVENTURE",
   nav=[('#highlights','Highlights'),('#itinerary','Day by Day'),("#fee","What's Included"),('#contact','Contact')],
   theme="Toggle theme", region="Tibet → Nepal",
@@ -91,7 +91,7 @@ T = {
   sub="18 September to 7 October 2027 — around twelve days in the saddle, around ten passes above 4,000m and about 9,000m of climbing, from the Potala Palace to Everest Base Camp, then across the Himalaya to Kathmandu.",
   duration="20 days / 19 nights",
   summary="This is not a simple crossing — it's a cycling journey across one of the highest, most spectacular plateaus on Earth. From Lhasa and the Potala Palace, around twelve days of riding along the Friendship Highway cross around ten passes above 4,000m — several of them above 5,000m, including the Gyagtso La at 5,220m — for about 9,000m of climbing. Along the way: Yamdrok Lake, the towns of Gyantse and Shigatse, Everest Base Camp at the foot of the north face, then the crossing of the Himalaya into Nepal and the temples of the Kathmandu valley. A demanding route, for trained cyclists who are at ease in the mountains.",
-  price_big="€4,500", price_unit="per person", price_line="2027 departure, 18 September to 7 October: <b>€4,500</b> per person",
+  price_big="€4,590", price_unit="per person", price_line="2027 departure, 18 September to 7 October: <b>€4,590</b> per person",
   difficulty="Difficulty", diff_aria="difficulty 5 out of 5",
   meeting="Meeting point: Xining — ends in Kathmandu", dates_tag="18 Sep → 7 Oct 2027", next="Next departure: 18 September to 7 October 2027",
   season="After the monsoon and before the cold sets in: the ideal season for this journey.",
@@ -222,15 +222,20 @@ def page(L):
     guide_ps = '\n'.join(f'          <p class="desc">{esc(p)}</p>' for p in t['guide_ps'])
     guide_stats = '\n'.join(f'            <div class="day-stat">{esc(k)}{" :" if L == "fr" else ":"} <b>{esc(v)}</b></div>' for k, v in t['guide_stats'])
     strip, cards = [], []
+    MONTHS = {'fr': ['janvier','février','mars','avril','mai','juin','juillet','août','septembre','octobre','novembre','décembre'],
+              'en': ['January','February','March','April','May','June','July','August','September','October','November','December']}
+    def day_date(n):
+        d = datetime.date(2027, 9, 18) + datetime.timedelta(days=n - 1)
+        return f'{d.day} {MONTHS[L][d.month - 1]}' if L == 'fr' else f'{d.day} {MONTHS[L][d.month - 1]}'
     for k, (photo, dd) in enumerate(DAYS):
         n = k + 1; title, desc, stats = dd[L]
-        strip.append(f'<div class="itin-row"><div class="itin-day">{t["dshort"]}{n}</div><div><h4>{esc(title)}</h4><span>{esc(short(desc))}</span></div></div>')
+        strip.append(f'<div class="itin-row"><div class="itin-day">{t["dshort"]}{n}<small>{day_date(n)}</small></div><div><h4>{esc(title)}</h4><span>{esc(short(desc))}</span></div></div>')
         st = '\n'.join(f'            <div class="day-stat">{t["st"][key]} : <b>{esc(v)}</b></div>' if L == 'fr' else f'            <div class="day-stat">{t["st"][key]}: <b>{esc(v)}</b></div>' for key, v in stats)
         ph = f'\n        <div class="day-photo"><img loading="lazy" decoding="async" src="/images/photo-{photo:02d}.jpg?v=2" alt="{esc(alt[photo])}"></div>' if photo else ''
         style = '' if photo else ' style="grid-template-columns:1fr;"'
         cards.append(f'''      <div class="day-card"{style}>{ph}
         <div>
-          <div class="day-num">{t["day"]} {n}</div>
+          <div class="day-num">{t["day"]} {n} · {day_date(n)}</div>
           <h3>{esc(title)}</h3>
           <p class="desc">{esc(desc)}</p>
           <div class="day-stats">
@@ -249,7 +254,7 @@ def page(L):
                      "touristType": ["Cycling groups", "Adventure travellers"],
                      "provider": {"@type": "TravelAgency", "name": "Lost Horizon", "email": "contact@lhassa-katmandou.com"},
                      "duration": "P20D",
-                     "offers": {"@type": "Offer", "price": "4500", "priceCurrency": "EUR", "url": url + "#fee"}}, ensure_ascii=False, indent=2)
+                     "offers": {"@type": "Offer", "price": "4590", "priceCurrency": "EUR", "url": url + "#fee"}}, ensure_ascii=False, indent=2)
     return f'''<!DOCTYPE html>
 <html lang="{L}" data-theme="dark">
 <head>

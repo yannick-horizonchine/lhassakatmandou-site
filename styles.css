@@ -252,9 +252,10 @@ hr.rule{border:none;border-top:1px solid var(--border);margin:0;}
 .panorama-photo{border-radius:6px;overflow:hidden;box-shadow:0 30px 70px -30px rgba(0,0,0,0.6);}
 .panorama-photo img{width:100%;display:block;}
 .itin-strip{margin-top:44px;display:flex;flex-direction:column;gap:0;}
-.itin-row{display:grid;grid-template-columns:56px 1fr;gap:16px;padding:18px 0;border-top:1px solid rgba(255,255,255,0.12);}
+.itin-row{display:grid;grid-template-columns:96px 1fr;gap:16px;padding:18px 0;border-top:1px solid rgba(255,255,255,0.12);}
 .itin-row:last-child{border-bottom:1px solid rgba(255,255,255,0.12);}
 .itin-day{font-family:'Inter',sans-serif;color:var(--gold);font-weight:600;font-size:16px;}
+.itin-day small{display:block;font-size:12px;font-weight:400;color:#9FADC2;margin-top:3px;}
 .itin-row h4{color:#fff;font-size:16.5px;font-weight:500;font-family:'Noto Sans SC',sans-serif;}
 .itin-row span{display:block;font-size:14.5px;color:#9FADC2;margin-top:5px;}
 
