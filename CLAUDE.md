@@ -1,10 +1,10 @@
 # Lhassa–Katmandou à vélo — site web
 
-Ce dépôt contient le site lhassa-katmandou.com (marque **China Lost Horizon** — toujours écrire « China Lost Horizon », jamais « Lost Horizon » seul), déployé sur **Cloudflare Pages**.
+Ce dépôt contient le site lhassa-katmandou.com (marque **Lost Horizon** — l'agence s'appelle « Lost Horizon », sans « China »), déployé sur **Cloudflare Pages**.
 
 ## Règles de travail
 
-- Ce site relève de China Lost Horizon (offre B2B en Chine). Il est distinct de Yunnan Belenos (activités personnelles du propriétaire) et de Horizon Trekking (séjours Europe et Afrique du Nord pour clients sinophones) : ne jamais mélanger leurs contenus, marques ou dépôts.
+- Ce site relève de Lost Horizon (offre B2B en Chine). Il est distinct de Yunnan Belenos (activités personnelles du propriétaire) et de Horizon Trekking (séjours Europe et Afrique du Nord pour clients sinophones) : ne jamais mélanger leurs contenus, marques ou dépôts.
 - Modifier les fichiers **directement dans ce dépôt** (pas de fichiers à copier-coller à la main).
 - Chaque changement est commité puis poussé ; Cloudflare Pages redéploie à partir de la branche `main`.
 - Garder le site compatible avec Cloudflare Pages (fichiers statiques, ou build dont le dossier de sortie est configuré dans Pages).
@@ -18,7 +18,7 @@ Site statique, sans étape de build — dans Cloudflare Pages : *Build command* 
 - `index.html` — page **française** (langue par défaut, `x-default`)
 - `en/index.html` — version anglaise
 - `styles.css` — feuille de style commune (reprise de la page d'origine sur horizonchine.com/chinalosthorizon)
-- `images/` — `photo-01.jpg` à `photo-37.jpg` (chacune utilisée **une seule fois** sur la page), `logo.png` (China Lost Horizon) ; `favicon*`, `apple-touch-icon.png`, `icon-192.png` — icônes (identiques à celles de horizontrekking.com ; liens en `?v=2`)
+- `images/` — `photo-01.jpg` à `photo-37.jpg` (chacune utilisée **une seule fois** sur la page), `logo.png` (Lost Horizon) ; `favicon*`, `apple-touch-icon.png`, `icon-192.png` — icônes (identiques à celles de horizontrekking.com ; liens en `?v=2`)
 - `404.html`, `en/404.html` — pages « introuvable » (chemins absolus obligatoires)
 - `sitemap.xml`, `robots.txt` — SEO
 - `_redirects` — redirige `/CLAUDE.md`, `/README.md` et `/tools/*` vers l'accueil pour ne pas les exposer
@@ -33,7 +33,7 @@ Site statique, sans étape de build — dans Cloudflare Pages : *Build command* 
 - Contact : téléphone de Mathieu Le Serre +33 6 27 29 79 77, e-mail contact@lhassa-katmandou.com. Pas de WeChat ni WhatsApp sur ce site.
 - Itinéraire jour par jour (20 jours) : rendez-vous à **Xining** (J1), fin à **Katmandou** (J20). Les vols internationaux ne sont **pas** inclus.
 - Toute modification de contenu doit être reportée dans les 2 langues (FR et EN), y compris le résumé jour par jour du profil d'altitude, les balises `canonical`, `hreflang`, Open Graph/Twitter et le JSON-LD de l'en-tête.
-- **Visages floutés : uniquement nos clients** (voyageurs étrangers d'environ 65-80 ans), quand leur visage est reconnaissable. Ne **pas** flouter les pèlerins, moines, habitants, passants, personnel (train, magasins), le guide local ni l'équipe China Lost Horizon. Exception : `photo-28.jpg` (notre guide, poing levé) reste net. Les maillots « Club des Cent Cols » ne posent pas de problème.
+- **Visages floutés : uniquement nos clients** (voyageurs étrangers d'environ 65-80 ans), quand leur visage est reconnaissable. Ne **pas** flouter les pèlerins, moines, habitants, passants, personnel (train, magasins), le guide local ni l'équipe Lost Horizon. Exception : `photo-28.jpg` (notre guide, poing levé) reste net. Les maillots « Club des Cent Cols » ne posent pas de problème.
 - Galerie « Le groupe 2026 » (section `#photos`).
 - Guide Axel (section `#guide`, photo `images/guide-axel.jpg`) ; le caisson hyperbare PAC suit l'équipe ; Axel a la formation de secourisme de l'Ifremmont.
 - Après tout remplacement d'une photo existante, incrémenter le `?v=N` des URL d'images (sinon navigateurs et Cloudflare réaffichent l'ancienne version). `_headers` limite le cache des images à 1 jour.

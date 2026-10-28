@@ -1,4 +1,4 @@
-/* Lost Horizon — China Lost Horizon — shared site stylesheet
+/* Lost Horizon — shared site stylesheet
    Adapted from the horizonchine.com template (same founding team / same design system) */
 :root{
   --ink:#16233B;
@@ -348,5 +348,5 @@ hr.rule{border:none;border-top:1px solid var(--border);margin:0;}
 .photo-grid figcaption{position:absolute;left:0;right:0;bottom:0;padding:22px 10px 8px;font-size:12.5px;line-height:1.4;color:#fff;background:linear-gradient(0deg,rgba(6,10,16,.8),transparent);}
 @media (max-width:640px){ .photo-grid{grid-template-columns:repeat(2,1fr);} }
 
-/* Mobile : « China Lost Horizon » sur une ligne */
+/* Mobile : « Lost Horizon » sur une ligne */
 @media (max-width:560px){ .brandmark b{font-size:15px;white-space:nowrap;} .brandmark span span{white-space:nowrap;font-size:8px;letter-spacing:.12em;} .nav{padding:12px 16px;} .brandmark img{height:30px;width:30px;} }

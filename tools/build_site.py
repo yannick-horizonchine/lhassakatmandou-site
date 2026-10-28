@@ -15,7 +15,7 @@ ALT = {
 T = {
 'fr': dict(
   lang='fr', locale='fr_FR', home='/', other='/en/', path='',
-  title="Lhassa–Katmandou à vélo — 20 jours / 19 nuits | China Lost Horizon",
+  title="Lhassa–Katmandou à vélo — 20 jours / 19 nuits | Lost Horizon",
   desc="Lhassa–Katmandou à vélo, du 18 septembre au 7 octobre 2027 : une dizaine de cols à plus de 4 000 m, le lac Yamdrok, le camp de base de l'Everest et la traversée de l'Himalaya jusqu'à Katmandou. Départ de Xining. 4 500 € par personne.",
   tagline="CHINE · TREKKING &amp; AVENTURE",
   nav=[('#highlights','Points forts'),('#itinerary','Jour par jour'),('#fee','Inclus'),('#contact','Contact')],
@@ -75,14 +75,14 @@ T = {
   t2h="Si nous devons annuler", t2=["Si des raisons de sécurité ou des restrictions officielles imposent un changement, nous adaptons le voyage ou remboursons la partie non effectuée."],
   c_cap="Contact", c_h="Nous contacter",
   c_p="Nous ne prenons pas de réservation en ligne : ce site est là pour vous présenter le voyage. Appelez-nous ou écrivez-nous pour en parler, que vous soyez cycliste intéressé ou responsable de club.",
-  email="E-mail", phone="Téléphone (Mathieu Le Serre)", team="Yannick Benichou et Mathieu Le Serre, China Lost Horizon", chat="WeChat et WhatsApp", qr_alt="QR code {} de Yannick",
+  email="E-mail", phone="Téléphone (Mathieu Le Serre)", team="Yannick Benichou et Mathieu Le Serre, Lost Horizon", chat="WeChat et WhatsApp", qr_alt="QR code {} de Yannick",
   legal="Immatriculation et garanties", legal_txt="Atout France IM035240001 · garantie financière APST · vérifier au registre →",
-  footer="China Lost Horizon — présentation du voyage et demandes d'information ; dates et détails confirmés personnellement avec notre équipe.",
+  footer="Lost Horizon — présentation du voyage et demandes d'information ; dates et détails confirmés personnellement avec notre équipe.",
   labels={'Lhasa':'Lhassa','Kathmandu':'Katmandou'},
 ),
 'en': dict(
   lang='en', locale='en_GB', home='/en/', other='/', path='en/',
-  title="Lhasa to Kathmandu by Bike — 20 days / 19 nights | China Lost Horizon",
+  title="Lhasa to Kathmandu by Bike — 20 days / 19 nights | Lost Horizon",
   desc="Lhasa to Kathmandu by bike, 18 September to 7 October 2027: around ten passes above 4,000m, Yamdrok Lake, Everest Base Camp and the crossing of the Himalaya to Kathmandu. Starts in Xining. €4,500 per person.",
   tagline="CHINA · TREKKING &amp; ADVENTURE",
   nav=[('#highlights','Highlights'),('#itinerary','Day by Day'),("#fee","What's Included"),('#contact','Contact')],
@@ -142,9 +142,9 @@ T = {
   t2h="If We Need to Cancel", t2=["If safety conditions or government restrictions force a change, we'll adapt or refund the unused portion of the trip."],
   c_cap="Contact", c_h="Get in Touch",
   c_p="We don't take bookings online — this site is here to show you the trip. Call or write to us to talk it through, whether you're an interested rider or a club organiser.",
-  email="Email", phone="Phone (Mathieu Le Serre)", team="Yannick Benichou and Mathieu Le Serre, China Lost Horizon", chat="WeChat &amp; WhatsApp", qr_alt="Yannick's {} QR code",
+  email="Email", phone="Phone (Mathieu Le Serre)", team="Yannick Benichou and Mathieu Le Serre, Lost Horizon", chat="WeChat &amp; WhatsApp", qr_alt="Yannick's {} QR code",
   legal="Registration &amp; guarantees", legal_txt="Atout France IM035240001 · APST financial guarantee · check the register →",
-  footer="China Lost Horizon — trip presentation &amp; enquiries, dates and details confirmed personally with our team.",
+  footer="Lost Horizon — trip presentation &amp; enquiries, dates and details confirmed personally with our team.",
   labels={},
 )}
 
@@ -247,7 +247,7 @@ def page(L):
     ld = json.dumps({"@context": "https://schema.org", "@type": "TouristTrip", "name": t['h1'], "description": t['desc'],
                      "url": url, "image": B + "/images/photo-11.jpg?v=2", "inLanguage": L,
                      "touristType": ["Cycling groups", "Adventure travellers"],
-                     "provider": {"@type": "TravelAgency", "name": "China Lost Horizon", "email": "contact@lhassa-katmandou.com"},
+                     "provider": {"@type": "TravelAgency", "name": "Lost Horizon", "email": "contact@lhassa-katmandou.com"},
                      "duration": "P20D",
                      "offers": {"@type": "Offer", "price": "4500", "priceCurrency": "EUR", "url": url + "#fee"}}, ensure_ascii=False, indent=2)
     return f'''<!DOCTYPE html>
@@ -266,7 +266,7 @@ def page(L):
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png?v=2">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=2">
 <meta property="og:type" content="website">
-<meta property="og:site_name" content="China Lost Horizon">
+<meta property="og:site_name" content="Lost Horizon">
 <meta property="og:title" content="{esc(t["title"])}">
 <meta property="og:description" content="{esc(t["desc"])}">
 <meta property="og:url" content="{url}">
@@ -289,8 +289,8 @@ def page(L):
 <header>
   <div class="nav">
     <a class="brandmark" href="{t["home"]}">
-      <img src="/images/logo.png" alt="China Lost Horizon">
-      <span><b>China Lost Horizon</b><span>{t["tagline"]}</span></span>
+      <img src="/images/logo.png" alt="Lost Horizon">
+      <span><b>Lost Horizon</b><span>{t["tagline"]}</span></span>
     </a>
     <nav class="nav-links">
       {nav}
