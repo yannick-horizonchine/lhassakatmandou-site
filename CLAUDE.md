@@ -13,8 +13,7 @@ Ce dépôt contient le site lhassa-katmandou.com (marque **Lost Horizon** — l'
 
 Site statique, sans étape de build — dans Cloudflare Pages : *Build command* vide, *Build output directory* `/`.
 
-- 📌 **À RAPPELER AU PROPRIÉTAIRE** : une fois les dates définitives appliquées et le site finalisé, lui proposer d'**abandonner le script** `tools/build_site.py` (il l'a demandé). Concrètement : vérifier que la régénération ne change rien, supprimer `tools/build_site.py` (et `tools/profile.svg` si inutile), retirer cette consigne et celles sur le script de ce fichier, et éditer ensuite `index.html` et `en/index.html` directement, dans les 2 langues. Dès que le propriétaire annonce les dates définitives, le rappeler après les avoir mises à jour.
-- ⚠️ `index.html` et `en/index.html` sont **générés** par `python3 tools/build_site.py` : modifier les textes, prix, photos et jours **dans `tools/build_site.py`**, puis régénérer (une édition directe des HTML serait écrasée). Voir `tools/README.md`.
+- `index.html` et `en/index.html` s'éditent **directement**, dans les 2 langues (plus de script de génération).
 - `index.html` — page **française** (langue par défaut, `x-default`)
 - `en/index.html` — version anglaise
 - `styles.css` — feuille de style commune (reprise de la page d'origine sur horizonchine.com/chinalosthorizon)
@@ -26,7 +25,7 @@ Site statique, sans étape de build — dans Cloudflare Pages : *Build command* 
 ## Contenu
 
 - Tarif : **4 590 € par personne** (résumé, section « Inclus » et `offers` du JSON-LD, dans les 2 langues).
-- Édition 2027 : **du 18 septembre au 7 octobre 2027** (résumé, sous-titre, section « Inclus », meta description). ⚠️ Dates **provisoires** : le propriétaire confirmera les dates définitives ; les mettre alors à jour partout (FR + EN, y compris la meta description), et vérifier la cohérence avec la durée de 20 jours. L'e-mail aux clubs partira après. Contrainte de dates : avoir passé le camp de base de l'Everest (Rongbuk, jour 13) avant les vacances nationales chinoises (semaine du 1er au 7 octobre) pour éviter la foule ; avec un départ le 18 septembre, Rongbuk tombe le 30 septembre.
+- Édition 2027 : **du 18 septembre au 7 octobre 2027** (résumé, sous-titre, section « Inclus », meta description) — dates **définitives**. Dates de chaque jour de l'itinéraire : J1 = 18 septembre, J20 = 7 octobre. Camp de base de l'Everest (Rongbuk, jour 13, 30 septembre) passé avant les vacances nationales chinoises (1er au 7 octobre). Si une date change, la modifier partout (FR + EN, meta description, JSON-LD, dates de chaque jour) et vérifier la cohérence avec la durée de 20 jours.
 - Groupe : cyclistes de plusieurs clubs francophones (France, Belgique, Suisse, Québec) inscrits **à titre individuel** — ne plus parler de « groupes constitués ». Ne pas mentionner le Club des Cent Cols.
 - Chiffres clés : une douzaine de jours de vélo, **une dizaine de cols** à plus de 4 000 m (dont plusieurs à plus de 5 000 m — ne pas donner de nombre exact), **environ 9 000 m** de dénivelé, train du Tibet ~22 h.
 - Durée annoncée : **20 jours / 19 nuits** (titre, JSON-LD), choix du propriétaire.
