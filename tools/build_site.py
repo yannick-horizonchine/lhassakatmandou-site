@@ -294,7 +294,7 @@ def page(L):
 <header>
   <div class="nav">
     <a class="brandmark" href="{t["home"]}">
-      <img src="/images/logo.png" alt="Lost Horizon">
+      <img src="/images/logo.png?v=2" alt="Lost Horizon">
       <span><b>Lost Horizon</b><span>{t["tagline"]}</span></span>
     </a>
     <nav class="nav-links">
