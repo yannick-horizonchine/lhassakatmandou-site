@@ -41,7 +41,7 @@ T = {
   alt_h="Acclimatation à l'altitude indispensable",
   alt_p="Ce voyage commence haut et monte vite : une douzaine de jours de vélo entre 3 400 et plus de 5 200 m, avec des étapes pouvant dépasser 120 km et 1 300 m de dénivelé positif. Une bonne acclimatation est essentielle : les premiers jours (Xining, puis Lhassa) permettent une montée progressive avant les cols du plateau, et une bouteille d'oxygène de secours fait partie de l'équipement du voyage. Un caisson hyperbare portable (PAC) suit en outre l'équipe tout au long du parcours. Comme pour nos autres itinéraires en très haute altitude, nous pouvons vous aider à préparer votre acclimatation avant le départ.",
   guide_cap="Votre guide", guide_h="Axel, guide et explorateur", guide_role="Guide pendant tout le voyage",
-  guide_alt="Axel, notre guide, souriant avec son sac à dos et ses bâtons de marche sur un sentier de montagne",
+  guide_alt="Axel, notre guide, souriant à vélo, chargé pour le voyage, devant d'anciennes ruines en terre",
   guide_ps=["Axel est aventurier professionnel et chef d'expédition en plein air. Il a parcouru des environnements exigeants — les Alpes, l'Amazonie, le Sahara — et mené des expéditions en haute montagne, une traversée en pirogue et des expéditions dans le désert. Cette expérience lui a donné une solide pratique de la vie en pleine nature.",
             "Ancien ingénieur en énergie et environnement, il a travaillé à l'observatoire astronomique de Shanghai. Passionné par l'histoire et la culture chinoises, il a étudié le chinois et l'histoire de la Chine ancienne. Depuis 2024, il emmène des voyageurs sur de longs itinéraires de traversée en Europe, en Chine et dans d'autres pays. Il a déjà guidé au Tibet et a traversé la Chine à vélo.",
             "Il aime l'aventure en montagne et l'observation de la faune, et partage volontiers avec le groupe les anecdotes culturelles du chemin."],
@@ -108,7 +108,7 @@ T = {
   alt_h="Altitude acclimatisation required beforehand",
   alt_p="This trip starts high and climbs fast: around twelve riding days between 3,400 and over 5,200m, with stages that can exceed 120km and 1,300m of ascent. Good acclimatisation is essential — the first days (Xining, then Lhasa) allow a gentle climb before the passes of the plateau, and a spare oxygen bottle is carried as part of the trip's equipment. A portable hyperbaric chamber (PAC) also travels with the team throughout the trip. As with our other very high-altitude routes, we can help you prepare your acclimatisation before departure.",
   guide_cap="Your Guide", guide_h="Axel, Guide and Explorer", guide_role="Your guide for the whole trip",
-  guide_alt="Axel, our guide, smiling with his backpack and trekking poles on a mountain trail",
+  guide_alt="Axel, our guide, smiling on his loaded touring bike in front of ancient mud-brick ruins",
   guide_ps=["Axel is a professional adventurer and outdoor leader. He has worked in demanding environments — the Alps, the Amazon, the Sahara — and has completed high-mountain expeditions, a dugout canoe crossing and desert expeditions. This experience has given him a deep, practical knowledge of life in the wild.",
             "A former environmental and energy engineer, he worked at the Shanghai Astronomical Observatory. Drawn to Chinese history and culture, he studied Chinese and ancient Chinese history. Since 2024, he has been leading travellers on long-distance crossings in Europe, China and other countries. He has already guided in Tibet and has crossed China by bike.",
             "He loves mountain adventure and wildlife watching, and enjoys sharing the cultural stories of the road with the group."],
@@ -363,7 +363,7 @@ def page(L):
       <div class="cap section-eyebrow">{t["guide_cap"]}</div>
       <h2 class="section-title">{esc(t["guide_h"])}</h2>
       <div class="day-card" style="border-bottom:1px solid var(--border);">
-        <div class="day-photo" style="aspect-ratio:233/329;"><img loading="lazy" decoding="async" src="/images/guide-axel.jpg?v=2" alt="{esc(t["guide_alt"])}" style="object-position:center top;"></div>
+        <div class="day-photo" style="aspect-ratio:233/329;"><img loading="lazy" decoding="async" src="/images/guide-axel.jpg?v=3" alt="{esc(t["guide_alt"])}" style="object-position:center top;"></div>
         <div>
           <div class="day-num">{esc(t["guide_role"])}</div>
           <h3>Axel</h3>
