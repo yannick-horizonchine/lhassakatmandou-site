@@ -3,12 +3,14 @@
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://lhassa-katmandou.com/</loc>
+    <lastmod>2026-11-09</lastmod>
     <xhtml:link rel="alternate" hreflang="fr" href="https://lhassa-katmandou.com/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://lhassa-katmandou.com/en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://lhassa-katmandou.com/"/>
   </url>
   <url>
     <loc>https://lhassa-katmandou.com/en/</loc>
+    <lastmod>2026-11-09</lastmod>
     <xhtml:link rel="alternate" hreflang="fr" href="https://lhassa-katmandou.com/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://lhassa-katmandou.com/en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://lhassa-katmandou.com/"/>

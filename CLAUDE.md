@@ -38,4 +38,5 @@ Site statique, sans étape de build — dans Cloudflare Pages : *Build command* 
 - Après tout remplacement d'une photo existante, incrémenter le `?v=N` des URL d'images (sinon navigateurs et Cloudflare réaffichent l'ancienne version). `_headers` limite le cache des images à 1 jour.
 - Images en `loading="lazy"`, sauf celles du carrousel d'en-tête (la première en `fetchpriority="high"`).
 - FAQ (section `#faq`, 26 questions en 7 rubriques, avant « Contact »), dans les 2 langues, avec le JSON-LD `FAQPage` de l'en-tête : toute modification d'une réponse (prix, dates, inclus, sécurité…) doit être reportée aussi dans la FAQ, dans les 2 langues et dans le JSON-LD.
+- GEO : `llms.txt` (résumé des faits pour les moteurs IA), `robots.txt` (robots IA autorisés), JSON-LD `@graph` de l'en-tête (TravelAgency, WebSite, WebPage, TouristTrip avec itinéraire et édition 2027, guide Axel) et `FAQPage`. Toute modification de prix, dates, inclus, itinéraire ou sécurité doit aussi être reportée dans `llms.txt`, dans le JSON-LD et dans `sitemap.xml` (`lastmod`).
 - Pas de formulaire : contact par téléphone et e-mail uniquement.
